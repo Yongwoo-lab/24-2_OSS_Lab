@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://i.namu.wiki/i/CYsXdQdGlOACqAG_NoN45qvEC71vaRicVOSsLXnDVYyGLa_tQnjI7UdcY1XAXYbmoXLxmD8kaMCBTCOhHgnfMg.svg">
+    <title>#1_Assignment_stylesheet 1</title>
+</head>
+<style>
+    #frame {
+        margin: 15px;
+    }
+
+    #top-bar {
+        padding: 15px;
+        background-color: rgb(7, 171, 109);
+        margin-bottom: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    #main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button {
+        background-color: rgb(241, 241, 241);
+        border: rgb(132, 132, 132)solid 1px;
+        border-radius: 5px;
+        padding: 3px;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 400;
+        transition: background-color ease;
+        text-decoration: none;
+        color: black;
+    }
+
+    .button-selected {
+        background-color: rgb(7, 171, 109);
+        border: rgb(132, 132, 132)solid 1px;
+        border-radius: 5px;
+        padding: 3px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 800;
+        color: white;
+        transition: background-color ease;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: white;
+    }
+
+    .bottom-bar {
+        background-color: rgb(241, 241, 241);
+        border-radius: 5px;
+        padding: 10px;
+        border: rgb(132, 132, 132) solid 1px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #main-left {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 12%;
+    }
+
+    #main-middle {
+        border: 40cm;
+        margin: 10px;
+        padding: 10px;
+        text-align: left;
+        width: 76%;
+        line-height: 25px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #main-right {
+        background-color: rgb(44, 150, 211);
+        border-radius: 5px;
+        color: white;
+        width: 12%;
+        padding: 10px;
+        padding-top: 20px;
+        line-height: 30px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1,
+    h4 {
+        margin: 0;
+    }
+
+    h2,
+    p {
+        margin: 0;
+    }
+</style>
+
+<body>
+    <div Id="frame">
+        <div id="top-bar">
+            <h1 style="color:white">Welocme to 김용우's Homepage (22200143)</h1>
+            <h4 style="color:white">Use the menu to select different Stylesheets</h4>
+        </div>
+        <div id="main">
+            <ul id="main-left">
+                <a class="button-selected" href="https://www.daum.net/">Stylesheet 1</a>
+                <a class="button" href="https://www.daum.net/">Stylesheet 2</a>
+                <a class="button" href="https://www.daum.net/">Stylesheet 3</a>
+                <a class="button" href="https://www.daum.net/">Stylesheet 4</a>
+                <a class="button" href="https://www.daum.net/">No Stylesheet</a>
+            </ul>
+            <div id="main-middle">
+                <h1>Same Page Different Stylesheets</h1>
+                </br>
+                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
+                    change the layout of this page by selecting different stylesheets in the menu, or by selecting one
+                    of the following links:</p>
+                <a style=color:black href="google.com">Stylesheet1, </a>
+                <a style=color:black href="google.com">Stylesheet2, </a>
+                <a style=color:black href="google.com">Stylesheet3, </a>
+                <a style=color:black href="google.com">Stylesheet4, </a>
+                <br>
+                <br>
+                <h2>No Styles</h2>
+                <br>
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the
+                    page looks like with no stylesheet:</p>
+                <a style=color:black href="google.com">No Stylesheet, </a>
+            </div>
+            <div id="main-right">
+                <h2>Side-Bar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
+        <br>
+        <div class="bottom-bar">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
