@@ -1,0 +1,224 @@
+    @charset "utf-8";
+
+    body {
+        background-image: url('https://design.co.kr/wp-content/uploads/2024/06/2415_03A_3copy.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .main-frame {
+        margin: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .connected-page-frame {
+        margin: 5%;
+        background-color: white;
+        padding: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .main-title {
+        padding: 10px;
+        text-align: center;
+        font-family: "Gowun Batang", serif;
+        font-weight: 200;
+        font-style: bold;
+        font-size: 40px;
+        color: azure;
+    }
+
+    .connected-title {
+        text-align: center;
+        font-family: "Gowun Batang", serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+    }
+
+    .table-responsive {
+        width: 100%;
+        overflow: -x auto;
+        padding: 0px 20px;
+    }
+
+    .container {
+        max-width: 60%;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .middle-frame {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .middle-frame label {
+        flex-grow: 34;
+        font-family: "Gowun Batang", serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    .middle-frame input,
+    .middle-frame select {
+        border-radius: 10px;
+        width: 80%;
+        padding: 10px 0px;
+        margin-bottom: 10px;
+        border: 2px solid blanchedalmond;
+        font-family: "Gowun Batang", serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 20px;
+        text-align: center;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .middle-frame input.invalid,
+    .middle-frame select.invalid {
+        border-color: red !important;
+        box-shadow: 0 0 5px red !important;
+    }
+
+    .submit-bar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .text-end {
+        color: white;
+    }
+
+    .btn-light,
+    .btn-primary,
+    .btn-danger {
+        width: 130px;
+        margin: 0 10px;
+    }
+
+    .btn-success {
+        margin: 20px;
+    }
+
+    .font1 {
+        flex-grow: 1;
+        font-family: "Gowun Batang", serif;
+        font-weight: 200;
+        font-style: bold;
+        font-size: 24px;
+        padding: 15px 0;
+    }
+
+
+    .font2 {
+        font-family: "Gowun Batang", serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+
+    @media (max-width: 600px) {
+        body {
+            background-image: url('https://i.pinimg.com/736x/10/27/2d/10272d77612a24da26e86e9564591ff6.jpg');
+        }
+
+
+        .main-frame {
+            background-color: rgba(255, 255, 255, 0.746);
+        }
+
+        .main-title {
+            color: black;
+        }
+
+        .connected-title {
+            font-size: 20px;
+            color: black;
+        }
+
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            display: block;
+        }
+
+        thead tr {
+            display: none;
+        }
+
+        tr {
+            margin-bottom: 10px;
+        }
+
+        td {
+            position: relative;
+            padding-left: 50%;
+        }
+
+        td:before {
+            content: attr(data-label);
+            position: absolute;
+            left: 6px;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+
+        .text-end {
+            color: black;
+        }
+
+        .connected-page-frame {
+            margin: 3%;
+            background-color: white;
+        }
+
+
+        .container {
+            max-width: 100%;
+            margin: 10px auto;
+            padding: 20px;
+        }
+
+        .middle-frame {
+            flex-direction: column;
+        }
+
+        .middle-frame input,
+        .middle-frame select {
+            border-radius: 10px;
+            width: 100%;
+            padding: 10px 0px;
+            margin-bottom: 10px;
+            border: 2px solid blanchedalmond;
+            font-family: "Gowun Batang", serif;
+            font-style: normal;
+            font-size: 14px;
+            text-align: center;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-light,
+        .btn-primary,
+        .btn-danger {
+            width: 70%;
+            margin-bottom: 10px;
+        }
+
+        .submit-bar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
